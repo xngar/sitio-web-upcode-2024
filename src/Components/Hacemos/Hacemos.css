@@ -1,0 +1,46 @@
+
+.hacemos{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--colorNaranja);
+    padding: 20px 80px;
+}
+
+.hacemos-top h2{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    color:white;
+    padding-top: 20px;
+    margin-bottom: 4rem;
+}
+
+.hacemos-info{
+   display: flex;
+   flex-direction: column;
+   color:white;   
+   font-family: "Fira Sans", sans-serif;
+   margin-bottom: 30px;
+}
+
+.hacemos-info h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hacemos-info p {
+    text-align: justify;
+}
+
+.hacemos-bottom{
+    display: flex;
+    flex-direction: row;
+}
+
+.hacemos-bottom > div{
+    flex:1;
+}
+
+.hacemos :nth-child(2) img{
+    width: 400px;
+}
