@@ -1,3 +1,62 @@
 .trabajar{
-    height: 50vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 80px;
+    justify-content: space-between;
 }
+
+.trabajar-info{
+    display: flex;
+    flex-direction: row;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.trabajar-izq, .trabajar-der{
+    flex:1;
+}
+
+.trabajar-der {
+    position: relative;
+}
+
+.trabajar-der img{
+    position: absolute;
+    width: 600px;
+    left:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trabajar-izq h2{
+    font-size:60px;
+    color:var(--colorNaranja);
+    margin-top:60px;
+    text-align: left;
+}
+
+.trabajar-izq p{
+    text-align: justify;
+    font-size: 1rem;
+    width: 500px;
+    margin-top: 30px;
+}
+
+.trabajar-logos{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 60px;
+
+}
+
+.trabajar-logos img{
+   
+    object-fit: contain;
+    
+    
+}
+
