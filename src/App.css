@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.up{
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border:3px solid var(--colorTexto);
+  cursor: pointer;
+}
+
+.up-ima{
+  width: 100%;
+}
