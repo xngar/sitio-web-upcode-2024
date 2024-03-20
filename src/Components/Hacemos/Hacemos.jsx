@@ -6,7 +6,7 @@ const Hacemos = () => {
   return (
     <div className="hacemos">
       <div className="hacemos-top">
-        <h2>¿Qué es lo que hacemo?</h2>
+        <h2>¿Qué es lo que hacemos?</h2>
       </div>
       <div className="hacemos-bottom">
         <div>
