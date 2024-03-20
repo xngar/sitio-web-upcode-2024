@@ -1,0 +1,34 @@
+footer{
+    display: flex;
+    padding: 20px 80px;
+    justify-content: space-between;
+    
+}
+
+footer > div {
+    flex:1;
+}
+footer :nth-child(1){
+    text-align: left;
+}
+
+.footer-izq img{
+  width: 200px;
+}
+
+
+.footer-der{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    font-family: "Fira Sans", sans-serif;
+    color:white;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+.footer-der > div > p > a{
+    text-decoration: none;
+    color:white;
+}
