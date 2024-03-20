@@ -68,6 +68,8 @@ button{
     transition: all ease .2s;
     cursor: pointer;
     font-weight: 700;
+    outline: none;
+    border:none;
 }
 
 button:hover{
