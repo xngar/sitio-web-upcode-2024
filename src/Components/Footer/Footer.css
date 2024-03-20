@@ -2,6 +2,7 @@ footer{
     display: flex;
     padding: 20px 80px;
     justify-content: space-between;
+    height: 250px;
     
 }
 
@@ -23,7 +24,7 @@ footer :nth-child(1){
     text-align: right;
     font-family: "Fira Sans", sans-serif;
     color:white;
-    align-items: center;
+   
     font-size: 1rem;
 }
 

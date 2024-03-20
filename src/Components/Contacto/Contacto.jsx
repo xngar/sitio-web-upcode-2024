@@ -8,6 +8,8 @@ const Contacto = () => {
   const formik = useFormik({
     initialValues: {
       email: "",
+      nombre:"",
+      celular:""
     },
 
     onSubmit: (values) => {
@@ -25,15 +27,19 @@ const Contacto = () => {
         <form onSubmit={formik.handleSubmit}>
 
         
-        <label htmlFor="name">Nombre</label>
+        
+        <div>
+        <h2>Hablemos!</h2>
+        <label htmlFor="nombre">Nombre</label>
           <input
-            id="name"
-            name="name"
-            type="name"
+            id="nombre"
+            name="nombre"
+            type="nombre"
             onChange={formik.handleChange}
-            value={formik.values.email}
+            value={formik.values.nombre}
             placeholder="Nombre"
           />  
+          
          
 
             
@@ -53,21 +59,22 @@ const Contacto = () => {
             name="celular"
             type="celular"
             onChange={formik.handleChange}
-            value={formik.values.email}
+            value={formik.values.celular}
           />
 
-          <label htmlFor="mensaje">Celular</label>
+          <label htmlFor="mensaje">Comentario</label>
           <textarea
         rows={4}
            cols={10}
-            id="mensaje"
-            name="mensaje"
+            id="comentario"
+            name="comentario"
             
             onChange={formik.handleChange}
-            value={formik.values.email}
+            value={formik.values.comentario}
           />
 
-          <button type="submit">Submit</button>
+          <button type="submit">Enviar Mensaje</button>
+          </div>
         </form>
         
       </div>

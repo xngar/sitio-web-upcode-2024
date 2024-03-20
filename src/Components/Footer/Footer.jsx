@@ -14,6 +14,10 @@ const Footer = () => {
             Email: <a href="mailto:contacto@upcode.cl">contacto@upcode.cl</a>
           </p>
           <p>
+            Email Soporte: <a href="mailto:contacto@upcode.cl">soporte@upcode.cl</a>
+          </p>
+          <br/>
+          <p>
             Celular: <a href="tel:+56978560879">+56 9 7856 0879</a>
           </p>
         </div>
