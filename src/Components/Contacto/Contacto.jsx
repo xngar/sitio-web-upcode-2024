@@ -2,6 +2,7 @@ import React from "react";
 import "./Contacto.css";
 import ImagenContacto from "../../image/imagen-contacto.png";
 import { useFormik } from 'formik';
+import {motion} from "framer-motion"
 
 
 const Contacto = () => {
@@ -19,16 +20,24 @@ const Contacto = () => {
 
   return (
     <div className="contacto">
-      <div>
+      <motion.div
+      initial={{opacity:0, y:200}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duracion:1, type:"spring"}}
+      >
         <img src={ImagenContacto} />
-      </div>
+      </motion.div>
       <div>
         
         <form onSubmit={formik.handleSubmit}>
 
         
         
-        <div>
+        <motion.div
+        initial={{opacity:0, y:200}}
+        whileInView={{opacity:1, y:0}}
+        transition={{duracion:1, type:"spring"}}
+        >
         <h2>Hablemos!</h2>
         <label htmlFor="nombre">Nombre</label>
           <input
@@ -74,7 +83,7 @@ const Contacto = () => {
           />
 
           <button type="submit">Enviar Mensaje</button>
-          </div>
+          </motion.div>
         </form>
         
       </div>
