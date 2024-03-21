@@ -30,17 +30,13 @@ const Slider = () => {
           <motion.button
           style={{opacity:0}}
           
-          animate= {{opacity:1}}
+        
           whileHover={{
             scale:1.2,
-            background:"white",
-            color:"orange"
+            
 
           }}
-          transition={{
-            type:"spring",
-            duration:2
-          }}
+          
           >Contáctanos</motion.button>
         </div>
         <div className='slider-der'>
