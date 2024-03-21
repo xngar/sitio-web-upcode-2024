@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Navbar.css"
 import logo from "../../image/logo_upcode.png"
+import {motion} from "framer-motion"
 
 const Navbar = () => {
   return (
@@ -10,7 +11,14 @@ const Navbar = () => {
                 <img src={logo} />
             </div>
             <div>
-                <nav>
+                <motion.nav 
+                initial={{opacity:0, x:50}}
+                animate={{opacity:1,x:0}}
+                transition={{
+                    duration:1,
+
+                }}
+                >
                     <ul>
                         <li>Inicio</li>
                         <li>Presentacion</li>
@@ -18,7 +26,7 @@ const Navbar = () => {
                         <li>Clientes</li>
                         <li>Contáctenos</li>
                     </ul>
-                </nav>
+                </motion.nav>
             </div>
         </header>
     </div>

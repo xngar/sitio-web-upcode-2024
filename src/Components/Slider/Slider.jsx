@@ -30,7 +30,7 @@ const Slider = () => {
           <motion.button
           initial={{opacity:0}}
           
-          whileInView={{opacity:1}}
+          animate= {{opacity:1}}
           whileHover={{
             scale:1.2,
             background:"white",
