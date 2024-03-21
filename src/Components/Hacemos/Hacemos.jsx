@@ -1,9 +1,9 @@
 import React from "react";
 import "./Hacemos.css";
 import ImgHacemos from "../../image/img-que-hacemos.png";
-import {motion} from "framer-motion"
 
-const Hacemos = () => {
+
+const Hacemos = ({motion}) => {
   return (
     <div className="hacemos">
       <motion.div

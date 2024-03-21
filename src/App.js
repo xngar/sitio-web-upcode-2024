@@ -9,6 +9,7 @@ import Slider from './Components/Slider/Slider';
 import Somos from './Components/Somos/Somos';
 import Trabajar from './Components/Trabajar/Trabajar';
 import UP from "./image/up.png";
+import { motion } from "framer-motion"
 
 
 function App() {
@@ -18,13 +19,13 @@ function App() {
         <img className='up-ima' src={UP} />
       </div>
 
-      <Navbar />
-      <Slider />
-      <Somos />
-      <Hacemos />
-      <Trabajar />
-      <Proyectos />
-      <Contacto />
+      <Navbar motion={motion} />
+      <Slider motion={motion} />
+      <Somos motion={motion} />
+      <Hacemos motion={motion} />
+      <Trabajar motion={motion} />
+      <Proyectos motion={motion} />
+      <Contacto motion={motion} />
       <Footer />
     </div>
   );

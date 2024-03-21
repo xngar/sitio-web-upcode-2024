@@ -2,10 +2,10 @@ import React from "react";
 import "./Contacto.css";
 import ImagenContacto from "../../image/imagen-contacto.png";
 import { useFormik } from 'formik';
-import {motion} from "framer-motion"
 
 
-const Contacto = () => {
+
+const Contacto = ({motion}) => {
   const formik = useFormik({
     initialValues: {
       email: "",

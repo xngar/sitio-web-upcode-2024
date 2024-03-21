@@ -4,9 +4,9 @@ import ImaProy1 from "../../image/imagen-proyecto.jpg";
 import NET from "../../image/csharp.png";
 import TYPES from "../../image/types.png";
 import CLOUD from "../../image/aws.png";
-import {motion} from "framer-motion"
 
-const Proyectos = () => {
+
+const Proyectos = ({motion}) => {
   return (
     <div className="proyectos">
       <div>

@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Navbar.css"
 import logo from "../../image/logo_upcode.png"
-import {motion} from "framer-motion"
 
-const Navbar = () => {
+
+const Navbar = ({motion}) => {
   return (
     <div className='navbar'>
         <header>

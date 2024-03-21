@@ -2,9 +2,9 @@ import React from 'react'
 import "./Slider.css"
 import SliderImg from "../../image/slider-img.png";
 import Up from "../../image/up.png";
-import {motion} from "framer-motion";
 
-const Slider = () => {
+
+const Slider = ({motion}) => {
   return (
     <div className='slider'>
         <div className='slider-izq'>

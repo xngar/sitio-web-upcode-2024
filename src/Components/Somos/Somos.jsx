@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Somos.css"
-import {motion} from "framer-motion";
 
-const Somos = () => {
+
+const Somos = ({motion}) => {
   return (
     <div className='somos'>
         <motion.div
