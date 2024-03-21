@@ -9,6 +9,7 @@ const Hacemos = () => {
       <motion.div
       initial={{y:100, opacity:0}}
       whileInView={{y:0, opacity:1}}
+      
       transition={{duration:1, type:"spring", delay:1}}
       className="hacemos-top">
         <h2>¿Qué es lo que hacemos?</h2>
@@ -16,7 +17,8 @@ const Hacemos = () => {
       <motion.div
       initial={{y:100, opacity:0}}
       whileInView={{y:0, opacity:1}}
-      transition={{duration:1, type:"spring", delay:1.5}}
+      
+      transition={{duration:1, type:"spring", delay:0.5}}
       className="hacemos-bottom">
         <div>
           <div className="hacemos-info">

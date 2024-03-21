@@ -8,11 +8,17 @@ import Serenity from "../../image/serenity.png";
 import Reactjs from "../../image/react.png";
 import TypeScript from "../../image/types.png";
 import Javascript from "../../image/javascript.png";
+import {motion} from "framer-motion"
 
 const Trabajar = () => {
   return (
     <div className='trabajar'>
-        <div className='trabajar-info'>
+        <motion.div
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        
+        transition={{duration:2, type:"spring", delay:0.3}}
+        className='trabajar-info'>
             <div className='trabajar-izq'>
                 <h2>¿Porqué trabajar <br/>con nosotros?</h2>
                 <p>Nuestro enfoque se centra en brindar soluciones innovadoras y personalizadas a nuestros clientes, utilizando las últimas herramientas y tecnologías disponibles.
@@ -24,7 +30,7 @@ Con un sólido historial de éxito en la implementación de proyectos tecnológi
    <img src={Tecnologico} />
             </div>
 
-        </div>
+        </motion.div>
         <div className='trabajar-logos'>
             
                 <img src={Csharp} />
