@@ -6,7 +6,7 @@ const Somos = () => {
   return (
     <div className='somos'>
         <motion.div
-        initial={{y:100 , opacity:0}}
+        style={{y:100 , opacity:0}}
        
         whileInView={{y:0, opacity:1}}
         transition={{duration:1, type:"spring"}}
@@ -14,7 +14,7 @@ const Somos = () => {
             <h2>¿Quiénes Somos?</h2>
         </motion.div>
         <motion.div
-        initial={{y:100 , opacity:0}}
+        style={{y:100 , opacity:0}}
        
         whileInView={{y:0, opacity:1}}
         transition={{duration:1, type:"spring", delay:0.5}}
