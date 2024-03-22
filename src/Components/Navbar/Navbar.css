@@ -42,3 +42,7 @@ nav ul {
     font-size: 18px;
     cursor: pointer;
 }
+
+nav ul li:hover{
+    color:var(--colorNaranja)
+}

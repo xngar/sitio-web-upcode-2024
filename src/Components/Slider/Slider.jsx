@@ -26,6 +26,12 @@ const Slider = ({ motion }) => {
         <motion.button
           whileHover={{
             scale: 1.2,
+            rotate:"2.5deg"
+          }}
+          whileTap={{scale: .6}}
+          transition={{
+            ease:"easeInOut",
+            duration:0.1245
           }}
         >
          <Link spy={true} to="Contactenos" smooth={true}> Contáctanos</Link>
