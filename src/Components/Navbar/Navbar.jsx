@@ -3,6 +3,7 @@ import "./Navbar.css"
 import logo from "../../image/logo_upcode.png"
 import {Link} from "react-scroll"
 import Proyectos from '../Proyectos/Proyectos'
+import { AnimatePresence } from 'framer-motion'
 
 
 const Navbar = ({motion}) => {
@@ -10,7 +11,13 @@ const Navbar = ({motion}) => {
     <div className='navbar' id="navbar">
         <header>
             <div>
-                <img src={logo} />
+                <AnimatePresence initial={true}>
+                <motion.img
+                initial={{rotate:0}}
+                whileInView={{rotate:[10, 10, 0, 10, 10,10, 0]}}
+                
+                src={logo} />
+                </AnimatePresence>
             </div>
             <div>
                 <motion.nav
