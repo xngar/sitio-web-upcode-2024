@@ -11,7 +11,7 @@ import Javascript from "../../image/javascript.png";
 
 const Trabajar = ({ motion }) => {
   return (
-    <div className="trabajar">
+    <div className="trabajar" id="Vision">
       <motion.div
       initial={{opacity:0,y:100}}
       whileInView={{opacity:1, y:0}}

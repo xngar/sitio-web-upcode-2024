@@ -40,4 +40,5 @@ nav ul {
     font-weight: 400;
     align-items: center;
     font-size: 18px;
+    cursor: pointer;
 }

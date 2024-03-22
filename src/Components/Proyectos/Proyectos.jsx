@@ -8,7 +8,7 @@ import CLOUD from "../../image/aws.png";
 
 const Proyectos = ({motion}) => {
   return (
-    <div className="proyectos">
+    <div className="proyectos" id="Proyectos">
       <div>
         <h2>Proyectos</h2>
       </div>

@@ -5,7 +5,7 @@ import ImgHacemos from "../../image/img-que-hacemos.png";
 
 const Hacemos = ({motion}) => {
   return (
-    <div className="hacemos">
+    <div className="hacemos" id="Hacemos">
       <motion.div
       initial={{opacity:0,y:100}}
       whileInView={{opacity:1, y:0}}

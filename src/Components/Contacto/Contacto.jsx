@@ -19,7 +19,7 @@ const Contacto = ({motion}) => {
   });
 
   return (
-    <div className="contacto">
+    <div className="contacto" id="Contactenos">
       <motion.div
       initial={{opacity:0, y:200}}
       whileInView={{opacity:1, y:0}}
