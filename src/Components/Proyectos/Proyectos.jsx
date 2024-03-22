@@ -13,7 +13,10 @@ const Proyectos = ({motion}) => {
         <h2>Proyectos</h2>
       </div>
       {/* Estructura de cada proyecto */}
-      <div
+      <motion.div
+      initial={{opacity:0,x:50}}
+      whileInView={{opacity:1, x:0}}
+      transition={{duration:1}}
       
       className="proyecto">
         <div className="proyecto-detalle">
@@ -45,11 +48,15 @@ const Proyectos = ({motion}) => {
         <div className="proyecto-imagen">
           <img src={ImaProy1} />
         </div>
-      </div>
+      </motion.div>
 
 
 
-      <div className="proyecto">
+      <motion.div
+      initial={{opacity:0,x:50}}
+      whileInView={{opacity:1, x:0}}
+      transition={{duration:1}}
+      className="proyecto">
         <div className="proyecto-detalle">
           <div>
             <h2>Desarrollo Web</h2>
@@ -79,7 +86,7 @@ const Proyectos = ({motion}) => {
         <div className="proyecto-imagen">
           <img src={ImaProy1} />
         </div>
-      </div>
+      </motion.div>
 
 
     </div>

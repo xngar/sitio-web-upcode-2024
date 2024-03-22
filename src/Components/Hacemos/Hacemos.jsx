@@ -6,12 +6,20 @@ import ImgHacemos from "../../image/img-que-hacemos.png";
 const Hacemos = ({motion}) => {
   return (
     <div className="hacemos">
-      <div
+      <motion.div
+      initial={{opacity:0,y:100}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:1}}
       className="hacemos-top">
         <h2>¿Qué es lo que hacemos?</h2>
-      </div>
-      <div
-      
+      </motion.div>
+
+
+      <motion.div
+      initial={{opacity:0,y:100}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:1}}
+
       className="hacemos-bottom">
         <div>
           <div className="hacemos-info">
@@ -73,7 +81,7 @@ const Hacemos = ({motion}) => {
             <p>Aplicaciones y Sitios Web, utilizando las últimas versiones de Frameworks y librerías. Nuestras aplicaciones son 100% responsivas para el acceso a las plataformas desde cualquier lugar y dispositivo móvil.</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
