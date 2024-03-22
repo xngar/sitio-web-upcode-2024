@@ -11,12 +11,11 @@ const Navbar = ({motion}) => {
                 <img src={logo} />
             </div>
             <div>
-                <motion.nav 
-                initial={{opacity:0, x:50}}
-                animate={{opacity:1,x:0}}
+                <motion.nav
+                initial={{opacity:0, x:100}}
+                animate={{opacity:1, x:0}}
                 transition={{
-                    duration:1,
-
+                    duration:1
                 }}
                 >
                     <ul>

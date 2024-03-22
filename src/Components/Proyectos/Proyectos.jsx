@@ -13,10 +13,8 @@ const Proyectos = ({motion}) => {
         <h2>Proyectos</h2>
       </div>
       {/* Estructura de cada proyecto */}
-      <motion.div
-      initial={{opacity:0, y:200}}
-      whileInView={{opacity:1, y:0}}
-      transition={{duracion:1, type:"spring"}}
+      <div
+      
       className="proyecto">
         <div className="proyecto-detalle">
           <div>
@@ -47,7 +45,7 @@ const Proyectos = ({motion}) => {
         <div className="proyecto-imagen">
           <img src={ImaProy1} />
         </div>
-      </motion.div>
+      </div>
 
 
 
