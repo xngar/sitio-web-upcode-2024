@@ -8,7 +8,7 @@
     background-color: var(--colorNaranja);
     border-radius: 20px;
     overflow: hidden;
-    height: 400px;
+    height: fit-content;
     margin-bottom: 20px;
     
 }
@@ -18,7 +18,7 @@
     
     font-size: 60px;
     color:var(--colorNaranja);
-    padding-top: 20px;
+    padding-top: -20px;
     margin-bottom: 20px;
     
 
@@ -36,6 +36,17 @@
 .proyecto-detalle div h2{
     color:white;
     margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.titulo-descripcion{
+    font-size: 22px !important;
+    margin-bottom: 20px !important;
+}
+
+
+.proyecto-detalle div h3{
+    font-size: 16px;
 }
 
 .proyecto-detalle div h3:nth-child(3){
@@ -44,6 +55,7 @@
 
 .proyecto-detalle div p{
     text-align: justify;
+    font-size:14px;
 }
 
 .proyecto-imagen{
