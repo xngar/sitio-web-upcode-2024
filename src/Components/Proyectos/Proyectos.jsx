@@ -8,6 +8,12 @@ import AMAZON from "../../image/amazon.png"
 import SQL from "../../image/sql-server.png"
 import REACT from "../../image/react.png"
 import WP from "../../image/WP.png"
+import WPM from "../../image/wal.png"
+import AGRO from "../../image/agro.png"
+import BROKER from "../../image/broker.jpg"
+import TURISCLUB from "../../image/turisclub.jpg"
+import TRAVELWAY from "../../image/travelway.jpg"
+
 
 const Proyectos = ({ motion }) => {
   return (
@@ -63,7 +69,7 @@ const Proyectos = ({ motion }) => {
           </div>
         </div>
         <div className="proyecto-imagen">
-          <img src={ImaProy1} />
+          <img src={TURISCLUB} />
         </div>
       </motion.div>
 
@@ -106,7 +112,7 @@ Plataforma Acceso Clientes para ver sus resultados de análisis en línea y pudi
           </div>
         </div>
         <div className="proyecto-imagen">
-          <img src={ImaProy1} />
+          <img src={AGRO} />
         </div>
       </motion.div>
 
@@ -138,7 +144,7 @@ Plataforma Acceso Clientes para ver sus resultados de análisis en línea y pudi
           </div>
         </div>
         <div className="proyecto-imagen">
-          <img src={ImaProy1} />
+          <img src={BROKER} />
         </div>
       </motion.div>
 
@@ -176,7 +182,7 @@ Se le otorga beneficios al Socio como a las cargas que este posea. Se integra In
           </div>
         </div>
         <div className="proyecto-imagen">
-          <img src={ImaProy1} />
+          <img src={WPM} />
         </div>
       </motion.div>
 
@@ -209,7 +215,7 @@ Se le otorga beneficios al Socio como a las cargas que este posea. Se integra In
           </div>
         </div>
         <div className="proyecto-imagen">
-          <img src={ImaProy1} />
+          <img src={TRAVELWAY} />
         </div>
       </motion.div>
       
