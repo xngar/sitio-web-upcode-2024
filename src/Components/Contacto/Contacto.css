@@ -76,3 +76,15 @@ button:hover{
     background-color: white;
     color:var(--colorNaranja)
 }
+
+.mensaje-enviado{
+    font-family: "Fira Sans", sans-serif;
+    color:white;
+    font-size: 16px;
+    background-color: var(--colorNaranja);
+    border-radius: 25px;
+    width: fit-content !important;
+    margin-top: 20px;
+    padding: 10px;
+
+}

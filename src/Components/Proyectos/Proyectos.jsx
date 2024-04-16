@@ -39,7 +39,7 @@ const Proyectos = ({ motion }) => {
             <h2>
               Cliente: <span>Turisclub</span>
             </h2>
-            <h3 className="titulo-descripcion">Descripcion proyecto</h3>
+            <h3 className="titulo-descripcion">Descripción proyecto</h3>
             <p>
               <h3>Creación de una API Rest - Web Services</h3>
               Para acceder al contenido desde un
@@ -88,7 +88,7 @@ const Proyectos = ({ motion }) => {
             <h2>
               Cliente: <span>Agropraxis Group Ltda</span>
             </h2>
-            <h3 className="titulo-descripcion">Descripcion proyecto</h3>
+            <h3 className="titulo-descripcion">Descripción proyecto</h3>
             <p>
             El Cliente solicite un desarrollo de CRM gestión de procedimientos y análisis de Predios agrícolas, previa certificación de Servicio Agrícola y Ganadero (SAG).
 
@@ -130,7 +130,7 @@ Plataforma Acceso Clientes para ver sus resultados de análisis en línea y pudi
             <h2>
               Cliente: <span>Broker Plus</span>
             </h2>
-            <h3 className="titulo-descripcion">Descripcion proyecto</h3>
+            <h3 className="titulo-descripcion">Descripción proyecto</h3>
             <p>
             Cliente solicitó un desarrollo de un sitio web autoadministrable, para la venta y arriendo de propiedades.
             </p>
@@ -162,7 +162,7 @@ Plataforma Acceso Clientes para ver sus resultados de análisis en línea y pudi
             <h2>
               Cliente: <span>Sindicato Logística Walmart</span>
             </h2>
-            <h3 className="titulo-descripcion">Descripcion proyecto</h3>
+            <h3 className="titulo-descripcion">Descripción proyecto</h3>
             <p>
             Cliente solicitó un CRM de gestión de Socios afiliados al Sindicato. 
 Se le otorga beneficios al Socio como a las cargas que este posea. Se integra Infraestructura AWS de alojamiento para la aplicación desarrollada.
@@ -200,7 +200,7 @@ Se le otorga beneficios al Socio como a las cargas que este posea. Se integra In
             <h2>
               Cliente: <span>Travelaway</span>
             </h2>
-            <h3 className="titulo-descripcion">Descripcion proyecto</h3>
+            <h3 className="titulo-descripcion">Descripción proyecto</h3>
             <p>
             Cliente solicitó servicio de alojamiento AWS para sus CRM de terceros.
             </p>

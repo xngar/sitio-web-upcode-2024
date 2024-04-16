@@ -1,22 +1,60 @@
-import React from "react";
+// import React from "react";
 import "./Contacto.css";
 import ImagenContacto from "../../image/imagen-contacto.png";
-import { useFormik } from 'formik';
+// import { useFormik } from 'formik';
+
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 
 const Contacto = ({motion}) => {
-  const formik = useFormik({
-    initialValues: {
-      email: "",
-      nombre:"",
-      celular:""
-    },
 
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
+
+  const [mensaje, setMensje] = useState("") 
+
+  // const formik = useFormik({
+  //   initialValues: {
+  //     email: "",
+  //     nombre:"",
+  //     celular:""
+  //   },
+
+  //   onSubmit: (values) => {
+  //     alert(JSON.stringify(values, null, 2));
+  //   },
+  // });
+
+
+
+  //CONTECTANDOME CON EMAIL JS
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_ztjtgbq', 'template_2dr63pl', form.current, {
+        publicKey: 'oFpIgFSCO2qWSv862',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setMensje("Su mensaje se ha enviado!")
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setMensje("Error en el envio, intente denuevo")
+        },
+      );
+  };
+
+
+  //FIN CONEXIÓN
+
+
+
 
   return (
     <div className="contacto" id="Contactenos">
@@ -29,7 +67,7 @@ const Contacto = ({motion}) => {
       </motion.div>
       <div>
         
-        <form onSubmit={formik.handleSubmit}>
+        <form ref={form} onSubmit={sendEmail}>
 
         
         
@@ -42,10 +80,9 @@ const Contacto = ({motion}) => {
         <label htmlFor="nombre">Nombre</label>
           <input
             id="nombre"
-            name="nombre"
+            name="user_name" 
             type="nombre"
-            onChange={formik.handleChange}
-            value={formik.values.nombre}
+    
             placeholder="Nombre"
           />  
           
@@ -55,37 +92,37 @@ const Contacto = ({motion}) => {
           <label htmlFor="email">Email</label>
           <input
             id="email"
-            name="email"
+            name="user_email"
             type="email"
-            onChange={formik.handleChange}
-            value={formik.values.email}
           />
    
 
           <label htmlFor="celular">Celular</label>
           <input
             id="celular"
-            name="celular"
-            type="celular"
-            onChange={formik.handleChange}
-            value={formik.values.celular}
+            name="user_cel"
+            type="tel"
+           
           />
 
-          <label htmlFor="mensaje">Comentario</label>
+          <label htmlFor="mensaje">Mensaje</label>
           <textarea
         rows={4}
            cols={10}
             id="comentario"
-            name="comentario"
+            name="message"
             
-            onChange={formik.handleChange}
-            value={formik.values.comentario}
+            
           />
 
           <button type="submit">Enviar Mensaje</button>
           </motion.div>
+          {mensaje ? <div className="mensaje-enviado">{mensaje}</div> : <div></div>
+            
+          }
+          
         </form>
-        
+         
       </div>
     </div>
   );
