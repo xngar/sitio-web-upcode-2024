@@ -48,7 +48,7 @@ nav ul li:hover{
     color:var(--colorNaranja)
 }
 
-@media screen and (min-width:340px){
+@media screen and (min-width:340px) and (max-width: 800px){
 
     .navbar{
     

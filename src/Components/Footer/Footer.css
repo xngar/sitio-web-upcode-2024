@@ -34,7 +34,7 @@ footer :nth-child(1){
     color:white;
 }
 
-@media screen and (min-width:340px) {
+@media screen and (min-width:340px) and (max-width: 800px) {
 
     footer{
         display: flex;

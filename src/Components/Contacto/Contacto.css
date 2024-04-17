@@ -89,7 +89,7 @@ button:hover{
 
 }
 
-@media screen and (min-width:340px){
+@media screen and (min-width:340px) and (max-width: 800px){
 
     .contacto :nth-child(1) img{
         display: none;

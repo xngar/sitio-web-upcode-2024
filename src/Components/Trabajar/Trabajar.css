@@ -60,7 +60,7 @@
     
 }
 
-@media screen and (min-width:340px){
+@media screen and (min-width:340px) and (max-width: 800px){
 
     .trabajar{
         height: fit-content;
