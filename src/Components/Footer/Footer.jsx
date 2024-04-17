@@ -18,7 +18,7 @@ const Footer = () => {
           </p>
           <br/>
           <p>
-            Celular: <a href="tel:+56978560879">+56 9 7856 0879</a>
+            WhatsApp: <a href="tel:+56978560879">+56 9 7856 0879</a>
           </p>
         </div>
       </div>
