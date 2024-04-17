@@ -57,3 +57,61 @@
     left: 50px;
     top:-50px;
 }
+
+
+@media screen and (min-width:340px){
+
+    .slider{
+        height: 80vh;
+        
+        display: flex;
+        padding: 20px 40px;
+    }
+    
+    .slider-izq{
+        display: flex;
+        flex-direction: column;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        justify-content: center;
+        flex:1;
+        flex-wrap: wrap;
+
+    }
+
+    .slider-izq h1{
+        color:white;
+        font-size: 40px;
+        text-align: left;
+        margin-bottom: 30px;
+        text-wrap:wrap;
+        ;
+    }
+
+    .slider-izq p{
+        color:white;
+        text-align: left;
+        text-align: justify;
+        margin-bottom: 2rem;
+        width: 80vw;
+        line-height: 25px;
+    }
+
+    .slider-izq button{
+        border-radius: 10px;
+        border:none;
+        padding: 10px 20px;
+        background-color: var(--colorNaranja);
+        color:white;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 1.2rem;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .slider-der{
+       display: none;
+        
+    }
+
+}

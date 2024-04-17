@@ -88,3 +88,28 @@ button:hover{
     padding: 10px;
 
 }
+
+@media screen and (min-width:340px){
+
+    .contacto :nth-child(1) img{
+        display: none;
+    }
+
+
+    .contacto{
+        display: flex;
+        padding: 30px 50px;
+        
+    }
+
+
+    .contacto div:nth-child(2)
+{
+    display: flex;
+    flex:1.5;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+}
+}

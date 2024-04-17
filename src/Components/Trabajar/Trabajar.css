@@ -60,3 +60,71 @@
     
 }
 
+@media screen and (min-width:340px){
+
+    .trabajar{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px 40px;
+        justify-content: space-between;
+    }
+
+    .trabajar-logos{
+        display: flex;
+        gap: 10px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        margin-top:50px
+    
+    }
+
+    .trabajar-logos img{
+   
+        width: 50%;
+        
+        
+    }
+
+    .trabajar-info{
+        display: flex;
+        flex-direction: column;
+        font-family: "Fira Sans", sans-serif;
+    }
+
+   
+    
+
+    .trabajar-izq h2{
+        font-size:40px;
+        color:var(--colorNaranja);
+        margin-top:60px;
+        text-align: left;
+    }
+
+    .trabajar-izq p{
+        text-align: justify;
+        font-size: 1rem;
+        width: fit-content;
+        margin-top: 30px;
+    }
+
+    .trabajar-der {
+        display: none;
+    }
+
+    .trabajar-der img{
+        position: absolute;
+        width: 50%;
+        left:60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+
+}

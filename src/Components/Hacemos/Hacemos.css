@@ -44,3 +44,32 @@
 .hacemos :nth-child(2) img{
     width: 400px;
 }
+
+@media screen and (min-width:340px){
+
+    .hacemos{
+        display: flex;
+        flex-direction: column;
+        background-color:var(--colorNaranja);
+        padding: 20px 50px;
+    }
+
+    .hacemos-top h2{
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-size: 60px;
+        color:white;
+        padding-top: 20px;
+        margin-bottom: 4rem;
+    }
+
+    .hacemos-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hacemos :nth-child(2) img{
+        display: none;
+    }
+
+}

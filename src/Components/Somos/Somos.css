@@ -32,3 +32,33 @@
     line-height: 30px;
 
 }
+
+@media screen and (min-width:340px){
+
+    .somos{
+        height: fit-content;
+        background-color:var(--colorNaranja);
+        padding: 1px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .somos :nth-child(2){
+
+    
+        background-color: white;
+        padding: 20px 20px;
+        border-radius: 20px;
+        width: 95%;
+        margin-top:30px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color:var(--colorTexto);
+        line-height: 30px;
+    
+    }
+
+}
