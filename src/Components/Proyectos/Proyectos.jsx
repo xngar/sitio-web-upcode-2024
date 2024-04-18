@@ -42,10 +42,13 @@ const Proyectos = ({ motion }) => {
             <h3 className="titulo-descripcion">Descripción proyecto</h3>
             <p>
               <h3>Creación de una API Rest - Web Services</h3>
+              <br></br>
               Para acceder al contenido desde un
               tercero. Integración pasarela de pago GetNet.
-              
+              <br></br>
+              <br></br>
               <h3>Infraestructura AWS para sus desarrollos</h3>
+              <br></br>
               Sitio Web El cliente solicitó un sitio web
               para la exposición y venta de paquetes turísticos, realizando el
               mantenimiento de los productos desde su ABM de contenido. Api Rest

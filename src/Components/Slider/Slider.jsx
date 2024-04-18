@@ -19,6 +19,8 @@ const Slider = ({ motion }) => {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
         >
+          ¿Listo para llevar tus ideas al siguiente nivel digital?
+          <br/>
           Transformamos tus proyectos en realidades digitales cautivadoras.
           Impulsa tu presencia en línea con nuestras soluciones de vanguardia.
         </motion.p>

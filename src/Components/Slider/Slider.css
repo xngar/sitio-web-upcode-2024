@@ -66,6 +66,7 @@
         
         display: flex;
         padding: 20px 40px;
+
     }
     
     .slider-izq{
@@ -96,6 +97,7 @@
         margin-bottom: 2rem;
         width:100%;
         line-height: 25px;
+        font-size: var(--font-p);
     }
 
     .slider-izq button{

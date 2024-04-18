@@ -25,7 +25,7 @@ const Hacemos = ({ motion }) => {
             <h3>Desarrollo de Aplicaciones Web</h3>
             <p>
               Nuestro servicio de desarrollo Front End se basa en tecnologías
-              líderes como React,ofreciendo una
+              líderes como React, ofreciendo una
               experiencia de usuario excepcional en todos los dispositivos, ya
               sea en PC, móvil o tablet. Diseñamos y desarrollamos aplicaciones
               con interfaces renovadas y una experiencia de usuario agradable.

@@ -100,15 +100,15 @@
     
 
     .trabajar-izq h2{
-        font-size:40px;
+        font-size:60px;
         color:var(--colorNaranja);
         margin-top:60px;
-        text-align: left;
+        text-align: center;
     }
 
     .trabajar-izq p{
         text-align: justify;
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: fit-content;
         margin-top: 30px;
     }

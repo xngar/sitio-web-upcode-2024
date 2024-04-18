@@ -72,4 +72,9 @@
         display: none;
     }
 
+    .hacemos-info p {
+        text-align: justify;
+        font-size: var(--font-p);
+    }
+
 }

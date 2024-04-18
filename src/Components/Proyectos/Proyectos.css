@@ -147,4 +147,11 @@
     
 }
 
+.proyecto-detalle div p{
+    text-align: justify;
+    text-wrap: wrap;
+    font-size:var(--font-p);
+}
+
+
 }
