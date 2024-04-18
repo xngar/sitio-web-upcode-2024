@@ -36,13 +36,14 @@
 @media screen and (min-width:340px) and (max-width: 800px){
 
     .somos{
-        height: fit-content;
+        height: 100vh;
         background-color:var(--colorNaranja);
-        padding: 1px 30px;
+        padding: 0px 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: -1px;
     }
 
     .somos :nth-child(2){

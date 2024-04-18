@@ -52,11 +52,23 @@ nav ul li:hover{
 
     .navbar{
     
-        padding: 10px 80px;
-        margin-bottom: -70px;
+        display: flex;
+        padding-top: 10px ;
+        
+        margin-bottom: -80px;
+        align-items: center;
+        justify-content: center;
         
        
     }
+
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+    
+
 
     nav{
         display: none;

@@ -62,7 +62,7 @@
 @media screen and (min-width:340px) and (max-width: 800px){
 
     .slider{
-        height: 80vh;
+        height: 100vh;
         
         display: flex;
         padding: 20px 40px;
