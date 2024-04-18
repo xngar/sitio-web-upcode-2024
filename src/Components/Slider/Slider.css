@@ -76,6 +76,7 @@
         justify-content: center;
         flex:1;
         flex-wrap: wrap;
+        align-items: center;
 
     }
 
@@ -93,7 +94,7 @@
         text-align: left;
         text-align: justify;
         margin-bottom: 2rem;
-        width: 80vw;
+        width:100%;
         line-height: 25px;
     }
 
@@ -107,6 +108,7 @@
         font-size: 1.2rem;
         width: 100%;
         cursor: pointer;
+       
     }
 
     .slider-der{
