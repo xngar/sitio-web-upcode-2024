@@ -3,7 +3,7 @@ import "./Navbar.css";
 import logo from "../../image/logo_upcode.png";
 import { Link } from "react-scroll";
 import Proyectos from "../Proyectos/Proyectos";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, easeInOut, transform } from "framer-motion";
 import { SlMenu } from "react-icons/sl";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 
@@ -46,6 +46,7 @@ const Navbar = ({ motion }) => {
         </div>
                
         <div>
+      
           <motion.nav
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -207,13 +208,20 @@ const Navbar = ({ motion }) => {
             </ul>
       </div> */}
       </header>
-      <div className="menuBurger"  style={{display:menuStatus ? 'block' :'none'}}>
+
+      <AnimatePresence>
+      <motion.div
+      initial={{opacity:0,transform:'scale(0)'}}
+      animate={{opacity:1, transform:'scale(1)'}}
+      transition={{duration:1.2, easeInOut}}
+      exit={{opacity:0}}
+      className="menuBurger"  style={{display:menuStatus ? 'block' :'none'}}>
       <AiOutlineCloseSquare onClick={()=>fnMenu(false)} style={{fontSize:'40'}} />
       <ul>  
               <Link spy={true} to="Somos" smooth={true}>
                 <li
-                onMouseEnter={()=>fnCambiar(true,1)}
-                onMouseLeave={()=>setOpen(false)}
+                // onMouseEnter={()=>fnCambiar(true,1)}
+                // onMouseLeave={()=>setOpen(false)}
                 onClick={()=>setMenuStatus(false)}
                 >
                   ¿Quiénes Somos?
@@ -234,8 +242,8 @@ const Navbar = ({ motion }) => {
               </Link>
               <Link spy={true} to="Hacemos" smooth={true}>
                 <li
-                onMouseEnter={()=>fnCambiar(true,2)}
-                onMouseLeave={()=>setOpen(false)}
+                // onMouseEnter={()=>fnCambiar(true,2)}
+                // onMouseLeave={()=>setOpen(false)}
                 onClick={()=>setMenuStatus(false)}
                 >¿Qué hacemos?
                 <span
@@ -255,10 +263,10 @@ const Navbar = ({ motion }) => {
               </Link>
               <Link spy={true} to="Vision" smooth={true}>
                 <li
-                onMouseEnter={()=>fnCambiar(true,3)}
-                onMouseLeave={()=>setOpen(false)}
+                // onMouseEnter={()=>fnCambiar(true,3)}
+                // onMouseLeave={()=>setOpen(false)}
                 onClick={()=>setMenuStatus(false)}
-                >Nuestra visión
+                >Nuestra Visión
                 <span
                     style={{
                       width: "115px",
@@ -286,7 +294,8 @@ const Navbar = ({ motion }) => {
               </Link>
             </ul>
               
-      </div>
+      </motion.div>
+      </AnimatePresence>
       
     </div>
   );

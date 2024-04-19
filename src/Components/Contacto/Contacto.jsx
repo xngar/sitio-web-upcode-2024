@@ -83,7 +83,7 @@ const Contacto = ({motion}) => {
             name="user_name" 
             type="nombre"
     
-            placeholder="Nombre"
+           
           />  
           
          
