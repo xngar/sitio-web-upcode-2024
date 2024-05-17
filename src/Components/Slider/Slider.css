@@ -4,6 +4,7 @@
     
     display: flex;
     padding: 20px 80px;
+    /* background-image: url("../../image/bg.jpg"); */
 }
 
 .slider-izq{
@@ -49,6 +50,29 @@
     flex:1;
     position: relative;
     
+}
+
+.slider-der > :nth-child(1){
+    z-index: 10;
+    width: 350px;
+    position: absolute;
+    top:-10px;
+    left: 200px;
+}
+
+.slider-der > :nth-child(2){
+    z-index: 10;
+    width: 160px;
+    position: absolute;
+    top:250px;
+    left:400px;
+}
+
+.slider-der > :nth-child(3){
+    z-index: 10;
+    width: 120px;
+    position: absolute;
+    top:50px;
 }
 
 .slider-der img{

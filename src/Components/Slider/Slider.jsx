@@ -3,6 +3,10 @@ import "./Slider.css";
 import SliderImg from "../../image/slider-img.png";
 import Up from "../../image/up.png";
 import { Link } from "react-scroll";
+import FLOAT1 from "../../image/float1.png"
+import FLOAT2 from "../../image/float2.png"
+import FLOAT3 from "../../image/float3.png"
+import { easeInOut } from "framer-motion";
 
 const Slider = ({ motion }) => {
   return (
@@ -12,7 +16,15 @@ const Slider = ({ motion }) => {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
         >
-          Hazle un <img src={Up} />
+          Hazle un <motion.img
+          initial={{y:0}}
+          whileInView={{y:[0,-10,0]}}
+          transition={{
+            duration:1,
+            repeat:1,
+            easeInOut
+          }}
+          src={Up} />
           <br />a tus proyectos
         </motion.h1>
         <motion.p
@@ -40,6 +52,30 @@ const Slider = ({ motion }) => {
         </motion.button>
       </div>
       <div className="slider-der">
+        <motion.img
+        initial={{y:0}}
+        whileInView={{y:[-10,10,-10]}}
+        transition={{
+          duration:4,
+          repeat:Infinity
+        }}
+        src={FLOAT1} />
+        <motion.img
+        initial={{y:0}}
+        whileInView={{y:[-10,10,-10]}}
+        transition={{
+          duration:4,
+          repeat:Infinity
+        }}
+        src={FLOAT2} />
+        <motion.img
+        initial={{y:0}}
+        whileInView={{y:[-10,10,-10]}}
+        transition={{
+          duration:4,
+          repeat:Infinity
+        }}
+        src={FLOAT3} />
         <img src={SliderImg} />
       </div>
     </div>

@@ -79,11 +79,21 @@ nav ul {
     align-items: center;
     font-size: 18px;
     cursor: pointer;
+ 
+}
+
+nav ul li{
+    transition: all .2s ease-in;
 }
 
 nav ul li:hover{
-    color:var(--colorNaranja)
+    color:white;
+    background-color: var(--colorNaranja);
+    padding: 10px;
+    border-radius: 10px;
 }
+
+
 
 @media screen and (min-width:340px) and (max-width: 800px){
 

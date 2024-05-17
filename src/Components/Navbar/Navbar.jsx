@@ -57,7 +57,7 @@ const Navbar = ({ motion }) => {
             <ul>
               <Link spy={true} to="Somos" smooth={true}>
                 <li
-                onMouseEnter={()=>fnCambiar(true,1)}
+                // onMouseEnter={()=>fnCambiar(true,1)}
                 onMouseLeave={()=>setOpen(false)}
                 >
                   ¿Quiénes Somos?
@@ -78,7 +78,7 @@ const Navbar = ({ motion }) => {
               </Link>
               <Link spy={true} to="Hacemos" smooth={true}>
                 <li
-                onMouseEnter={()=>fnCambiar(true,2)}
+                // onMouseEnter={()=>fnCambiar(true,2)}
                 onMouseLeave={()=>setOpen(false)}
                 >¿Qué hacemos?
                 <span
@@ -98,7 +98,7 @@ const Navbar = ({ motion }) => {
               </Link>
               <Link spy={true} to="Vision" smooth={true}>
                 <li
-                onMouseEnter={()=>fnCambiar(true,3)}
+                // onMouseEnter={()=>fnCambiar(true,3)}
                 onMouseLeave={()=>setOpen(false)}
                 >Nuestra visión
                 <span
@@ -133,80 +133,7 @@ const Navbar = ({ motion }) => {
       {/* ---------------------------- */}
       <SlMenu className="btnMenuHam"  onClick={()=> fnMenu(true)}   />
       
-        {/* 
-        <div className="menuBurger" style={{opacity: menuStatus ? 100:0}}>
-        
-        <ul>
-              <Link spy={true} to="Somos" smooth={true}>
-                <li
-                onMouseEnter={()=>fnCambiar(true,1)}
-                onMouseLeave={()=>setOpen(false)}
-                >
-                  ¿Quiénes Somos?
-                  <span
-                    style={{
-                      width: "140px",
-                      height: "3px",
-                      backgroundColor: "#f18c1a",
-                      position: "absolute",
-                      transform: open && openValor ===1? "scaleX(1)" : "scaleX(0)",
-                      top:'60px',
-                      left:'0px',
-                      transformOrigin:'left',
-                      transition:"transform .2s ease"
-                    }}
-                  />
-                </li>
-              </Link>
-              <Link spy={true} to="Hacemos" smooth={true}>
-                <li
-                onMouseEnter={()=>fnCambiar(true,2)}
-                onMouseLeave={()=>setOpen(false)}
-                >¿Qué hacemos?
-                <span
-                    style={{
-                      width: "125px",
-                      height: "3px",
-                      backgroundColor: "#f18c1a",
-                      position: "absolute",
-                      transform: open && openValor ===2 ? "scaleX(1)" : "scaleX(0)",
-                      top:'60px',
-                      left:'160px',
-                      transformOrigin:'left',
-                      transition:"transform .2s ease"
-                    }}
-                  />
-                </li>
-              </Link>
-              <Link spy={true} to="Vision" smooth={true}>
-                <li
-                onMouseEnter={()=>fnCambiar(true,3)}
-                onMouseLeave={()=>setOpen(false)}
-                >Nuestra visión
-                <span
-                    style={{
-                      width: "115px",
-                      height: "3px",
-                      backgroundColor: "#f18c1a",
-                      position: "absolute",
-                      transform: open && openValor ===3 ? "scaleX(1)" : "scaleX(0)",
-                      top:'60px',
-                      left:'310px',
-                      transformOrigin:'left',
-                      transition:"transform .2s ease"
-                    }}
-                  />
-                </li>
-              </Link>
-              <Link spy={true} to="Proyectos" smooth={true}>
-                {" "}
-                <li>Proyectos</li>
-              </Link>
-              <Link spy={true} to="Contactenos" smooth={true}>
-                <li>Contáctenos</li>
-              </Link>
-            </ul>
-      </div> */}
+       
       </header>
 
       <AnimatePresence>
