@@ -1,12 +1,23 @@
 
 .slider{
-    height: 80vh;
+    height: 100vh;
     
     display: flex;
     padding: 20px 80px;
-    /* background-image: url("../../image/bg.jpg"); */
+    flex-direction: column;
+    background-image: url("../../image/bg.jpg");
+    background-size: cover;
 }
 
+.slider > :nth-child(1){
+    margin-top: -30px;
+    margin-bottom: 100px;
+}
+
+.slider-wrapper{
+    display: flex;
+
+}
 .slider-izq{
     display: flex;
     flex-direction: column;

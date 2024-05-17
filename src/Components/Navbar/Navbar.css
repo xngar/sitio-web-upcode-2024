@@ -60,6 +60,9 @@ header div:nth-child(1)
 
 header div:nth-child(1) img{
     width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -50px;
 }
 
 

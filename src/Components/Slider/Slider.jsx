@@ -7,10 +7,16 @@ import FLOAT1 from "../../image/float1.png"
 import FLOAT2 from "../../image/float2.png"
 import FLOAT3 from "../../image/float3.png"
 import { easeInOut } from "framer-motion";
+import Navbar from "../Navbar/Navbar";
 
 const Slider = ({ motion }) => {
   return (
     <div className="slider">
+      <div>
+      <Navbar motion={motion} />
+      </div>
+
+      <div className="slider-wrapper">
       <div className="slider-izq">
         <motion.h1
           initial={{ opacity: 0, x: -100 }}
@@ -51,6 +57,8 @@ const Slider = ({ motion }) => {
          <Link spy={true} to="Contactenos" smooth={true}> Contáctanos</Link>
         </motion.button>
       </div>
+
+
       <div className="slider-der">
         <motion.img
         initial={{y:0}}
@@ -77,6 +85,8 @@ const Slider = ({ motion }) => {
         }}
         src={FLOAT3} />
         <img src={SliderImg} />
+      </div>
+      {/* FIN SLIDER DER */}
       </div>
     </div>
   );

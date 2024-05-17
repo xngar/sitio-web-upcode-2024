@@ -20,7 +20,7 @@ function App() {
         <Link spy={true} to='navbar' smooth={true}> <img className='up-ima' src={UP} /></Link>
       </div>
       {/* Novedades */}
-      <Navbar motion={motion} />
+
       <Slider motion={motion} />
       <Somos motion={motion} />
       <Hacemos motion={motion} />
