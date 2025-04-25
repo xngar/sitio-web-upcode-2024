@@ -1,7 +1,6 @@
-
-.somos{
+.somos {
     height: 300px;
-    background-color:var(--colorNaranja);
+    background-color: var(--colorNaranja);
     padding: 0px 60px;
     display: flex;
     flex-direction: column;
@@ -9,35 +8,35 @@
     align-items: center;
 }
 
-.somos :nth-child(1) h2{
+.somos :nth-child(1) h2 {
     font-family: "Fira Sans", sans-serif;
     font-weight: 800;
     font-size: 60px;
-    color:white;
+    color: white;
     padding-top: 20px;
 }
 
-.somos :nth-child(2){
+.somos :nth-child(2) {
 
-    
+
     background-color: white;
     padding: 20px 20px;
     border-radius: 20px;
     width: 95%;
-    margin-top:30px;
+    margin-top: 30px;
     font-family: "Fira Sans", sans-serif;
     font-weight: 500;
     font-size: 18px;
-    color:var(--colorTexto);
+    color: var(--colorTexto);
     line-height: 30px;
 
 }
 
-@media screen and (min-width:340px) and (max-width: 800px){
+@media screen and (min-width:340px) and (max-width: 800px) {
 
-    .somos{
+    .somos {
         height: 100vh;
-        background-color:var(--colorNaranja);
+        background-color: var(--colorNaranja);
         padding: 0px 30px;
         display: flex;
         flex-direction: column;
@@ -46,20 +45,20 @@
         margin-bottom: -1px;
     }
 
-    .somos :nth-child(2){
+    .somos :nth-child(2) {
 
-    
+
         background-color: white;
         padding: 20px 20px;
         border-radius: 20px;
         width: 95%;
-        margin-top:30px;
+        margin-top: 30px;
         font-family: "Fira Sans", sans-serif;
         font-weight: 500;
         font-size: var(--font-p);
-        color:var(--colorTexto);
+        color: var(--colorTexto);
         line-height: 30px;
-    
+
     }
 
 }
