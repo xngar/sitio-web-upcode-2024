@@ -4,6 +4,7 @@ import ImagenContacto from "../../image/imagen-contacto.png";
 // import { useFormik } from 'formik';
 
 import React, { useState } from 'react';
+import { sendMail } from '../../services/mailService';
 
 const Contacto = ({ motion }) => {
   const [mensaje, setMensaje] = useState("");
@@ -39,27 +40,15 @@ const Contacto = ({ motion }) => {
     };
 
     try {
-      const response = await fetch('https://services.upcode.cl/api/Mail/Notification', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(emailData)
+      await sendMail(emailData);
+      setMensaje("Su mensaje se ha enviado correctamente!");
+      setFormData({
+        nombre: "",
+        email: "",
+        celular: "",
+        comentario: ""
       });
-
-      if (response.ok) {
-        setMensaje("Su mensaje se ha enviado correctamente!");
-        setFormData({
-          nombre: "",
-          email: "",
-          celular: "",
-          comentario: ""
-        });
-      } else {
-        setMensaje("Error en el envío, por favor intente nuevamente");
-      }
     } catch (error) {
-      console.error('Error:', error);
       setMensaje("Error en el envío, por favor intente nuevamente");
     }
   };
